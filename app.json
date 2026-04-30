@@ -17,10 +17,13 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
+  "softwareKeyboardLayoutMode": "adjustResize", 
+  "adaptiveIcon": {
+    "foregroundImage": "./assets/images/adaptive-icon.png",
+    "backgroundColor": "#ffffff"
+  },
+
+
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
