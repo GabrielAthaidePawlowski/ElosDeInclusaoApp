@@ -9,7 +9,7 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/images/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,26 +17,42 @@
       "supportsTablet": true
     },
     "android": {
-  "softwareKeyboardLayoutMode": "adjustResize", 
-  "adaptiveIcon": {
-    "foregroundImage": "./assets/images/adaptive-icon.png",
-    "backgroundColor": "#ffffff"
-  },
-
-
+      "softwareKeyboardLayoutMode": "adjustResize",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.gabrielathaide.ElosDeInclusao",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDSLkanWJ68BLRR7y55oFGEKmIHHA3OdQU"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Permita que o Elos de Inclusão acesse sua localização para mostrar a rota."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "031881e0-57da-4fe5-b18b-dcc1c96ad711"
+      }
     }
   }
 }
